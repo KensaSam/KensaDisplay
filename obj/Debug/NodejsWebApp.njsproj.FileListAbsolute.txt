@@ -1,0 +1,15 @@
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp\obj\Debug\NodejsWebApp.njsproj.AssemblyReference.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp\obj\Debug\NodejsWebApp.njsproj.CoreCompileInputs.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp\bin\Microsoft.NodejsTools.WebRole.dll
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy\obj\Debug\NodejsWebApp.njsproj.AssemblyReference.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy\obj\Debug\NodejsWebApp.njsproj.CoreCompileInputs.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy\bin\Microsoft.NodejsTools.WebRole.dll
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy - Copy\obj\Debug\NodejsWebApp.njsproj.AssemblyReference.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy - Copy\obj\Debug\NodejsWebApp.njsproj.CoreCompileInputs.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Copy - Copy\bin\Microsoft.NodejsTools.WebRole.dll
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - NotWorkingYet\obj\Debug\NodejsWebApp.njsproj.AssemblyReference.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - NotWorkingYet\obj\Debug\NodejsWebApp.njsproj.CoreCompileInputs.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - NotWorkingYet\bin\Microsoft.NodejsTools.WebRole.dll
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - Working\obj\Debug\NodejsWebApp.njsproj.AssemblyReference.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - Working\obj\Debug\NodejsWebApp.njsproj.CoreCompileInputs.cache
+K:\R & D\01. NPD (new product development)\NP.057 Plantroom COP Display\VS\NodejsWebApp - Live - Working\bin\Microsoft.NodejsTools.WebRole.dll
