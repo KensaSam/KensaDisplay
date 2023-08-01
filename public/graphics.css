@@ -1,0 +1,407 @@
+/* Parent container for gauges and thermometer */
+.gauge__container {
+    display: flex;
+    justify-content: space-between; /* Separate the gauges and thermometer */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px
+}
+
+/* Container for Gauges 1 and 2 */
+.gauges {
+    display: flex;
+    justify-content: space-between; /* Separate the gauges */
+    align-items: center; /* Align items to the center vertically */
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for the gauges container */
+    margin: 0 auto; /* Center the gauges container horizontally */
+    position:relative;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Gauge 1 - COP */
+.COPgauge {
+    width: 100%;
+    max-width: 250px;
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 32px;
+    color: #3C3C3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -160px auto 0;
+    position: relative;
+    left: -80px;
+}
+
+.gauge__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #E8E8E8;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    z-index: 0; /* To keep the border above pseudo-element */
+    box-shadow: 0 0 0 3px #9D9D9C;
+    overflow: hidden;
+}
+
+.gaugeborder__cover {
+    width: 187px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+.gauge__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #E73E16;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+}
+
+.gauge__cover {
+    z-index: 1;
+    width: 75%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    z-index: 0; /* To keep the border above pseudo-element */
+    box-shadow: 0 0 0 3px #9D9D9C; /* Spread the shadow to create a border */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Gauge 2 - SCOP */
+.SCOPgauge {
+    width: 100%;
+    max-width: 250px;
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 32px;
+    color: #3C3C3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 215px auto 0;
+    position: relative;
+    left: -330px;
+}
+
+
+.gauge2__body {
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #E8E8E8;
+    position: relative;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    z-index: 0; /* To keep the border above pseudo-element */
+    box-shadow: 0 0 0 3px #9D9D9C;
+    overflow: hidden;
+}
+
+.gauge2border__cover {
+    width: 187px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: 103%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+.gauge2__fill {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 100%;
+    background: #E73E16;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+}
+
+.gauge2__cover {
+    z-index: 1;
+    width: 75%;
+    height: 150%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    z-index: 0; /* To keep the border above pseudo-element */
+    box-shadow: 0 0 0 3px #9D9D9C; /* Spread the shadow to create a border */
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Thermometer 1- Flow Temperature */
+
+.flow__thermometer {
+    height: 100px; /* Set a fixed height for the thermometer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Use absolute positioning for the thermometer */
+    top: calc(62% - 50px); /* Center the thermometer vertically */
+    right: calc(23% + 10px); /* Set a distance from the right edge of .gauges container */
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 32px; /* Set a fixed font size for the thermometer */
+    color: #3C3C3B;
+}
+
+.thermo__logo {
+    position: relative;
+    height: 450px;
+    width: 100px;
+}
+
+.thermo__bar {
+    z-index: 1;
+    height: 350px;
+    width: 45px;
+    background-color: #E8E8E8;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3.5px solid #9D9D9C;
+    border-bottom: none;
+}
+
+.thermo__circle {
+    height: 100px;
+    width: 100px;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    box-shadow: 0 0 0 3px #9D9D9C; /* Spread the shadow to create a border */
+}
+
+    .thermo__circle::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #E73E16;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.temp__bar {
+    z-index: 1;
+    display: block;
+    height: 360px;
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0) scaleY(0.5);
+    bottom: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #E73E16;
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-out;
+}
+
+.temp__cover {
+    z-index: -1;
+    display: block;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    left: 85%; /*135% with Temperature*/
+    transform: translateY(0px);
+    bottom: 60px;
+    background-color: white;
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-out;
+    /* Text */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 25%;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Thermometer 2 - Ground Temperature */
+
+.ground__thermometer {
+    height: 100px; /* Set a fixed height for the thermometer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Use absolute positioning for the thermometer */
+    top: calc(62% - 50px); /* Center the thermometer vertically */
+    right: calc(-25% + 10px); /* Set a distance from the right edge of .gauges container */
+    font-family: 'Museo Sans 700', sans-serif;
+    font-size: 32px; /* Set a fixed font size for the thermometer */
+    color: #3C3C3B;
+}
+
+.thermo2__logo {
+    position: relative;
+    height: 450px;
+    width: 100px;
+}
+
+.thermo2__bar {
+    z-index: 1;
+    height: 350px;
+    width: 45px;
+    background-color: #E8E8E8;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3.5px solid #9D9D9C;
+    border-bottom: none;
+}
+
+.thermo2__circle {
+    height: 100px;
+    width: 100px;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    box-sizing: border-box; /* Ensure border width is included in width */
+    box-shadow: 0 0 0 3px #9D9D9C; /* Spread the shadow to create a border */
+}
+
+    .thermo2__circle::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #E73E16;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.temp2__bar {
+    z-index: 1;
+    display: block;
+    height: 360px;
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0) scaleY(0.5);
+    bottom: 60px;
+    border-radius: 10px 10px 0 0;
+    background-color: #E73E16;
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-out;
+}
+
+.temp2__cover {
+    z-index: -1;
+    display: block;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    left: 91%; 
+    transform: translateY(0px);
+    bottom: 60px;
+    background-color: white;
+    transform-origin: center bottom;
+    transition: transform 0.2s ease-out;
+    /* Text */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 25%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Forest Image*/
+
+.tree__container {
+    position: relative; /* Use relative positioning for the container */
+    width: 100%; /* Ensure the container takes the full width */
+    margin-top: 110px;
+    height: 145px; /* Set the container height to 140 pixels */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .tree__container img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        max-height: 100%; /* Ensure the image doesn't exceed the container height */
+        margin-top: 0px; /* Set the top margin for the image */
+        margin-left: 20px; /* Set the left margin for the image */
+    }
+
+.tree__txt {
+    /* Text */
+    font-size: 32px;
+    color: #3C3C3B;
+    text-align: center;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/*Running Status Image*/
+
+.status__container {
+    position: relative; /* Use relative positioning for the container */
+    width: 100%; /* Ensure the container takes the full width */
+    margin-top: -30px;
+    height: 145px; /* Set the container height to 140 pixels */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .status__container img {
+        max-width: 100%; /* Ensure the image doesn't exceed the container width */
+        max-height: 100%; /* Ensure the image doesn't exceed the container height */
+        margin-top: 0px; /* Set the top margin for the image */
+        margin-left: 0px; /* Set the left margin for the image */
+    }
+
+.status__txt {
+    /* Text */
+    font-size: 32px;
+    color: #3C3C3B;
+    text-align: center;
+}
