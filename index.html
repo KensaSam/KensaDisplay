@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en' xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Data Display</title>
+
+    <!--FILE Links-->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="/graphics.css">
+    <script src="/graphics.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1>Plantroom Evo Display:</h1>
+
+    <div class="status__container">
+        <div class="status__txt"></div>
+        <img id="statusImage" src="" alt="Image">
+    </div>
+
+    <div class="gauge__container">
+
+        <!-- Container for Gauges 1 and 2 -->
+        <div class="gauges">
+
+            <!--COP Gauge-->
+            <section class="COPgauge">
+                <div class="gauge__body">
+                    <div class="gauge__fill"></div>
+                    <div class="gauge__cover"></div>
+                </div>
+                <div class="gaugeborder__cover"></div>
+            </section>
+
+            <!--SCOP Gauge-->
+            <section class="SCOPgauge">
+                <div class="gauge2__body">
+                    <div class="gauge2__fill"></div>
+                    <div class="gauge2__cover"></div>
+                </div>
+                <div class="gauge2border__cover"></div>
+            </section>
+
+            <!--Thermometer 1 = Flow -->
+            <section class="flow__thermometer">
+
+                <div class="thermo__logo">
+                    <div class="thermo__bar"></div>
+                    <div class="thermo__circle"></div>
+                    <div class="temp__bar"></div>
+                    <div class="temp__cover"></div>
+                </div>
+            </section>
+
+            <!--Thermometer 2 = Ground-->
+            <section class="ground__thermometer">
+
+                <div class="thermo2__logo">
+                    <div class="thermo2__bar"></div>
+                    <div class="thermo2__circle"></div>
+                    <div class="temp2__bar"></div>
+                    <div class="temp2__cover"></div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="tree__container">
+        <div class="tree__txt"></div>
+        <img src="/forest-outline.png" alt"Tree" />
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/graphics.js"></script>
+
+
+</body>
+</html>
